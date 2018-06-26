@@ -1,0 +1,9 @@
+﻿  Sprite.cpp
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(53): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(55): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(57): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(83): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(87): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(91): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(95): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Project1.vcxproj -> C:\Users\Brad\source\repos\Project1\Debug\Project1.exe
