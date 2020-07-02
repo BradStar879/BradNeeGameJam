@@ -23,7 +23,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{B5115A6C-336B-41A9-B3A3-87BAD7EDA2ED}</ProjectGuid>
     <RootNamespace>Project1</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -117,26 +117,49 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\GameStateManager\GameState.h" />
+    <ClInclude Include="Engine\GameStateManager\GameStateManager.h" />
     <ClInclude Include="Engine\Graphics\Sprite.h" />
     <ClInclude Include="Engine\Graphics\Texture.h" />
     <ClInclude Include="Engine\IO\Keyboard.h" />
     <ClInclude Include="Engine\IO\Mouse.h" />
+    <ClInclude Include="Game\DesktopPhysics\DesktopIcon.h" />
+    <ClInclude Include="Game\DesktopPhysics\DesktopWindow.h" />
+    <ClInclude Include="Game\DesktopPhysics\Taskbar.h" />
+    <ClInclude Include="Game\DesktopPhysics\Terminal.h" />
+    <ClInclude Include="Game\DesktopPhysics\TerminalIcon.h" />
+    <ClInclude Include="Game\GameStates\Desk.h" />
+    <ClInclude Include="Game\GameStates\Desktop.h" />
+    <ClInclude Include="Game\GameStates\MainMenu.h" />
+    <ClInclude Include="Game\MenuButtons\MenuButton.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\GameStateManager\GameState.cpp" />
+    <ClCompile Include="Engine\GameStateManager\GameStateManager.cpp" />
     <ClCompile Include="Engine\Graphics\Sprite.cpp" />
     <ClCompile Include="Engine\Graphics\Texture.cpp" />
     <ClCompile Include="Engine\IO\Keyboard.cpp" />
     <ClCompile Include="Engine\IO\Mouse.cpp" />
+    <ClCompile Include="Game\DesktopPhysics\DesktopIcon.cpp" />
+    <ClCompile Include="Game\DesktopPhysics\DesktopWindow.cpp" />
+    <ClCompile Include="Game\DesktopPhysics\Taskbar.cpp" />
+    <ClCompile Include="Game\DesktopPhysics\Terminal.cpp" />
+    <ClCompile Include="Game\DesktopPhysics\TerminalIcon.cpp" />
+    <ClCompile Include="Game\GameStates\Desk.cpp" />
+    <ClCompile Include="Game\GameStates\Desktop.cpp" />
+    <ClCompile Include="Game\GameStates\MainMenu.cpp" />
+    <ClCompile Include="Game\MenuButtons\MenuButton.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets" Condition="Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" />
     <Import Project="..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets" Condition="Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" />
+    <Import Project="..\packages\boost.1.67.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.67.0.0\build\boost.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -145,5 +168,6 @@
     <Error Condition="!Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
     <Error Condition="!Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
     <Error Condition="!Exists('..\packages\soil.1.16.0\build\native\soil.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\soil.1.16.0\build\native\soil.props'))" />
+    <Error Condition="!Exists('..\packages\boost.1.67.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.67.0.0\build\boost.targets'))" />
   </Target>
 </Project>

@@ -35,6 +35,12 @@ public:
 	void SetScale(float x);
 	void SetScale(float x, float y);
 
+	float GetX();
+	float GetY();
+
+	int GetWidth();
+	int GetHeight();
+
 
 private:
 

@@ -1,9 +1,72 @@
-﻿  Sprite.cpp
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(53): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(55): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(57): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(83): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(87): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(91): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(95): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+﻿  Engine.cpp
+  GameState.cpp
+  GameStateManager.cpp
+  Sprite.cpp
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(59): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(61): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(63): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(89): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(93): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(97): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\sprite.cpp(101): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Texture.cpp
+c:\users\brad\source\repos\project1\project1\engine\graphics\texture.cpp(33): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\engine\graphics\texture.cpp(38): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  Keyboard.cpp
+  Mouse.cpp
+  DesktopIcon.cpp
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(52): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(53): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(55): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopicon.cpp(56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  DesktopWindow.cpp
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(43): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(44): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(45): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(57): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(58): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(69): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(70): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(71): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(72): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(73): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(74): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(96): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(97): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(98): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(99): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\desktopphysics\desktopwindow.cpp(100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Taskbar.cpp
+  Terminal.cpp
+  TerminalIcon.cpp
+  Desk.cpp
+  Desktop.cpp
+  MainMenu.cpp
+  MenuButton.cpp
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(68): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(69): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(70): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\brad\source\repos\project1\project1\game\menubuttons\menubutton.cpp(71): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Main.cpp
+  Generating Code...
+soil.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'soil.lib(image_DXT.obj)' or at 'C:\Users\Brad\source\repos\Project1\Debug\SOIL.pdb'; linking object as if no debug info
+soil.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'soil.lib(image_helper.obj)' or at 'C:\Users\Brad\source\repos\Project1\Debug\SOIL.pdb'; linking object as if no debug info
+soil.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'soil.lib(SOIL.obj)' or at 'C:\Users\Brad\source\repos\Project1\Debug\SOIL.pdb'; linking object as if no debug info
+soil.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'soil.lib(stb_image_aug.obj)' or at 'C:\Users\Brad\source\repos\Project1\Debug\SOIL.pdb'; linking object as if no debug info
   Project1.vcxproj -> C:\Users\Brad\source\repos\Project1\Debug\Project1.exe

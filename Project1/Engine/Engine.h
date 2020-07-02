@@ -26,6 +26,11 @@ public:
 	void ShowMouse();
 	void HideMouse();
 
+	static float GetWidthMult();
+	static float GetHeightMult();
+
+	static bool IsMouseOver(float mouseX, float mouseY, float left, float bottom, float right, float top);
+
 private:
 	static GLFWwindow* window;
 

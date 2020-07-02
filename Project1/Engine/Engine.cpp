@@ -21,6 +21,7 @@ bool Engine::Initialize(const char* windowTitle) {
 		cout << "Error initializing GLFW" << endl;
 		return false;
 	}
+	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, windowTitle, NULL, NULL);
 	if (window == NULL) {
 		cout << "Error creating window" << endl;
@@ -66,7 +67,11 @@ void Engine::Update() {
 	double curTime = glfwGetTime();
 	dt = curTime - lastTime;
 	lastTime = curTime;
+	glfwGetWindowSize(window, &SCREEN_WIDTH, &SCREEN_HEIGHT);
 	glfwPollEvents();
+	if (glfwWindowShouldClose(window)) {
+		glfwTerminate();
+	}
 
 }
 
@@ -92,4 +97,16 @@ void Engine::HideMouse() {
 
 double Engine::GetDT() {
 	return dt;
+}
+
+float Engine::GetWidthMult() {
+	return ((float)SCREEN_WIDTH) / 1920;
+}
+
+float Engine::GetHeightMult() {
+	return ((float)SCREEN_HEIGHT) / 1080;
+}
+
+bool Engine::IsMouseOver(float mouseX, float mouseY, float left, float bottom, float right, float top) {
+	return mouseX >= left && mouseX <= right && mouseY >= bottom && mouseY <= top;
 }

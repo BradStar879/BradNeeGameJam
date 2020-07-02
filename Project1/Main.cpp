@@ -2,6 +2,11 @@
 #include "Engine/Graphics/Sprite.h"
 #include "Engine/IO/Mouse.h"
 #include "Engine/IO/Keyboard.h"
+#include "Game/MenuButtons/MenuButton.h"
+#include "Engine/GameStateManager/GameStateManager.h"
+#include "Game/GameStates/MainMenu.h"
+#include "Game/GameStates/Desk.h"
+#include "Game/GameStates/Desktop.h"
 
 #include <iostream>
 using namespace std;
@@ -11,49 +16,32 @@ int main() {
 	cout << "Yay! :) " << endl;
 	Engine engine;
 	engine.Initialize("Brad and Nee Game Jam");
+	GameStateManager * gsm = new GameStateManager();
+	GameState * mainMenu = new MainMenu(gsm);
+	GameState * desk = new Desk(gsm);
+	GameState * desktop = new Desktop(gsm);
+	gsm->Push(mainMenu);
 
-	Sprite background = Sprite("Assets/Images/menubg.png", 0, 0);
-	Sprite testSprite = Sprite("Assets/Images/Pink_Button.png", 100, 100);
-	
 	while(true) {
-		
 		engine.Update();
-		background.Update();
-		testSprite.Update();
-
-		background.SetScale(.667f);
-		testSprite.SetScale(.667f);
-		if (Mouse::ButtonDown(GLFW_MOUSE_BUTTON_LEFT)) {
-			testSprite.RotateBy(10);
+		gsm->Update();
+		string currentCommand = gsm->GetCommand();
+		if (currentCommand.compare("Desk") == 0) {
+			gsm->Push(desk);
+			cout << "Push Desk" << endl;
 		}
-		if (Mouse::ButtonDown(GLFW_MOUSE_BUTTON_RIGHT)) {
-			testSprite.RotateBy(-10);
+		else if (currentCommand.compare("Desktop") == 0) {
+			gsm->Push(desktop);
+			cout << "Push Desktop" << endl;
 		}
-
-		if (Keyboard::Key(GLFW_KEY_W)) {
-			testSprite.MoveUp();
+		else if (Keyboard::KeyDown(GLFW_KEY_ESCAPE)) {
+			gsm->Pop();
 		}
-		if (Keyboard::Key(GLFW_KEY_S)) {
-			testSprite.MoveDown();
+		else if (currentCommand.compare("Quit") == 0) {
+			glfwTerminate();
 		}
-		if (Keyboard::Key(GLFW_KEY_D)) {
-			testSprite.MoveRight();
-		}
-		if (Keyboard::Key(GLFW_KEY_A)) {
-			testSprite.MoveLeft();
-		}
-		if (Keyboard::Key(GLFW_KEY_Q)) {
-			engine.HideMouse();
-		}
-		if (Keyboard::Key(GLFW_KEY_E)) {
-			engine.ShowMouse();
-		}
-
-		//testSprite.MoveTo((float)Mouse::GetMouseX(), (float)Mouse::GetMouseY());
-
 		engine.BeginRender();
-		background.Render();
-		testSprite.Render();
+		gsm->Render();
 		engine.EndRender();
 	}
 

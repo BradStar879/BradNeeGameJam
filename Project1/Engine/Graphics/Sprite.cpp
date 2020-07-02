@@ -5,6 +5,8 @@ Sprite::Sprite() {
 
 	xPos = 0;
 	yPos = 0;
+	xScale = 1;
+	yScale = 1;
 	rot = 0;
 	speed = 100;
 	texture = Texture();
@@ -16,6 +18,8 @@ Sprite::Sprite(string imagePath) {
 	texture = Texture(imagePath);
 	xPos = 0;
 	yPos = 0;
+	xScale = 1;
+	yScale = 1;
 	rot = 0;
 	speed = 100;
 }
@@ -23,8 +27,10 @@ Sprite::Sprite(string imagePath) {
 Sprite::Sprite(string imagePath, float _xPos, float _yPos) {
 
 	texture = Texture(imagePath);
-	xPos = _xPos;
-	yPos = _yPos;
+	xPos = _xPos * Engine::GetWidthMult();
+	yPos = _yPos * Engine::GetHeightMult();
+	xScale = 1;
+	yScale = 1;
 	rot = 0;
 	speed = 100;
 }
@@ -92,7 +98,7 @@ void Sprite::MoveUp() {
 }
 
 void Sprite::MoveDown() {
-	yPos -= speed  * Engine::GetDT();
+	yPos -= speed * Engine::GetDT();
 }
 
 void Sprite::RotateTo(float x) {
@@ -111,4 +117,20 @@ void Sprite::SetScale(float x) {
 void Sprite::SetScale(float x, float y) {
 	xScale = x;
 	yScale = y;
+}
+
+float Sprite::GetX() {
+	return xPos;
+}
+
+float Sprite::GetY() {
+	return yPos;
+}
+
+int Sprite::GetWidth() {
+	return texture.GetWidth();
+}
+
+int Sprite::GetHeight() {
+	return texture.GetHeight();
 }

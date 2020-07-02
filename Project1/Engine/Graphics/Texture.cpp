@@ -1,4 +1,5 @@
 #include "Texture.h"
+#include "../Engine.h"
 
 Texture::Texture() {
 
@@ -29,12 +30,12 @@ int Texture::GetID() {
 
 int Texture::GetWidth() {
 
-	return width;
+	return width * Engine::GetWidthMult();
 }
 
 int Texture::GetHeight() {
 
-	return height;
+	return height * Engine::GetHeightMult();
 }
 
 bool Texture::GetTextureParams() {
